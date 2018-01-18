@@ -146,7 +146,7 @@
 				</executions>
 				<configuration>
 					<contextDirectory>${outputDirectory}</contextDirectory>
-					<repository>alvin-cora-docker-fitnesse</repository>
+					<repository>alvin-docker-fitnesse</repository>
 				</configuration>
 			</plugin>
 		</plugins>
