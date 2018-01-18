@@ -51,7 +51,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>fitnesse</artifactId>
+			<artifactId>alvincorafitnesse</artifactId>
 			<version>${alvinfitnesse.version}</version>
 			<scope>compile</scope>
 		</dependency>
