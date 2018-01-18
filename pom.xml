@@ -118,7 +118,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<imageName>alvin-fitnesse</imageName>
+					<imageName>alvin-docker-fitnesse</imageName>
 					<dockerDirectory>docker</dockerDirectory>
 					<resources>
 					</resources>
