@@ -1,6 +1,6 @@
 FROM  openjdk:8-jre-alpine
 
-COPY /fitnesse.jar /fitnesse/
+COPY /alvincorafitnesse.jar /fitnesse/
 COPY /FitNesseRoot /fitnesse/FitNesseRoot
 COPY /plugins.properties /fitnesse/
 COPY /password.txt /fitnesse/
