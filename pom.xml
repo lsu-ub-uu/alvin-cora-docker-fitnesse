@@ -24,7 +24,7 @@
 	<name>The Alvin Fitnesse docker</name>
 
 	<properties>
-		<alvinfitnesse.version>0.1-SNAPSHOT</alvinfitnesse.version>
+		<alvincorafitnesse.version>0.1-SNAPSHOT</alvincorafitnesse.version>
 	</properties>
 
 	<scm>
@@ -52,7 +52,7 @@
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>alvincorafitnesse</artifactId>
-			<version>${alvinfitnesse.version}</version>
+			<version>${alvincorafitnesse.version}</version>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
@@ -90,8 +90,8 @@
 							<artifactItems>
 								<artifactItem>
 									<groupId>se.uu.ub.cora</groupId>
-									<artifactId>fitnesse</artifactId>
-									<version>${alvinfitnesse.version}</version>
+									<artifactId>alvincorafitnesse</artifactId>
+									<version>${alvincorafitnesse.version}</version>
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>${project.build.directory}/docker</outputDirectory>
