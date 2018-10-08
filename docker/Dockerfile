@@ -1,4 +1,4 @@
-FROM  openjdk:8-jre-alpine
+FROM  openjdk:10-jre-slim
 
 COPY /alvincorafitnesse.jar /fitnesse/
 COPY /FitNesseRoot /fitnesse/FitNesseRoot
