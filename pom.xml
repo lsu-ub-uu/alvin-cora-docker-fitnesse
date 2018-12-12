@@ -14,34 +14,33 @@
   ~     GNU General Public License for more details.
   ~
   ~     You should have received a copy of the GNU General Public License
-  ~     along with Cora.  If not, see <http://www.gnu.org/licenses/>.
+  ~     along with Cora.  If not, see <http://www.gnu.org/licenses />.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>0.7-SNAPSHOT</version>
+		<version>0.8.6</version>
 	</parent>
 
 	<artifactId>alvin-cora-docker-fitnesse</artifactId>
 	<packaging>pom</packaging>
-	<version>0.2-SNAPSHOT</version>
+	<version>0.4-SNAPSHOT</version>
 	<name>The Alvin Fitnesse docker</name>
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<alvincorafitnesse.version>0.2-SNAPSHOT</alvincorafitnesse.version>
+		<alvincorafitnesse.version>0.3.0</alvincorafitnesse.version>
 	</properties>
 
 	<scm>
 		<connection>scm:git:https://github.com/lsu-ub-uu/alvin-cora-docker-fitnesse.git</connection>
 		<developerConnection>scm:git:https://github.com/lsu-ub-uu/alvin-cora-docker-fitnesse.git</developerConnection>
 		<url>https://github.com/lsu-ub-uu/alvin-cora-docker-fitnesse.git</url>
-	</scm>
+	  <tag>HEAD</tag>
+  </scm>
 
 	<dependencies>
 		<dependency>
