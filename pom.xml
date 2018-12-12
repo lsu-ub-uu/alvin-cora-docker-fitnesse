@@ -24,17 +24,17 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>0.8-SNAPSHOT</version>
+		<version>0.8.6</version>
 	</parent>
 
 	<artifactId>alvin-cora-docker-fitnesse</artifactId>
 	<packaging>pom</packaging>
-	<version>0.3-SNAPSHOT</version>
+	<version>0.3.0-SNAPSHOT</version>
 	<name>The Alvin Fitnesse docker</name>
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<alvincorafitnesse.version>0.3-SNAPSHOT</alvincorafitnesse.version>
+		<alvincorafitnesse.version>0.3.0</alvincorafitnesse.version>
 	</properties>
 
 	<scm>
