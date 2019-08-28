@@ -7,7 +7,7 @@ COPY /password.txt /fitnesse/
 
 WORKDIR /fitnesse
 
-CMD java -classpath /fitnesse/alvincorafitnesse.jar  -DsystemUnderTestUrl="http://therest:8080/therest/" -DappTokenVerifierUrl="http://apptokenverifier:8080/apptokenverifier/" fitnesseMain.FitNesseMain -p 8090 -a /fitnesse/password.txt
+CMD java -classpath /fitnesse/alvincorafitnesse.jar  -DsystemUnderTestUrl="http://therest:8080/alvin/" -DappTokenVerifierUrl="http://apptokenverifier:8080/apptokenverifier/" fitnesseMain.FitNesseMain -p 8090 -a /fitnesse/password.txt
 
 #java -jar fitnesse-standalone.jar -p 8090 -o -a password.txt
 
