@@ -1,5 +1,7 @@
 FROM  openjdk:11-jre-slim
 
+ENV tokenLogoutURL setWhenDockerStarts
+
 COPY /alvincorafitnesse.jar /fitnesse/
 COPY /FitNesseRoot /fitnesse/FitNesseRoot
 COPY /plugins.properties /fitnesse/
@@ -7,7 +9,7 @@ COPY /password.txt /fitnesse/
 
 WORKDIR /fitnesse
 
-CMD java -classpath /fitnesse/alvincorafitnesse.jar  -DsystemUnderTestUrl="http://alvin:8080/alvin/" -DappTokenVerifierUrl="http://apptokenverifier:8080/apptokenverifier/" -DidpLoginUrl="http://idplogin:8080/idplogin/" -DgatekeeperServerUrl="http://gatekeeper:8080/gatekeeperserver/" fitnesseMain.FitNesseMain -p 8090 -a /fitnesse/password.txt
+CMD java -classpath /fitnesse/alvincorafitnesse.jar  -DsystemUnderTestUrl="http://alvin:8080/alvin/" -DappTokenVerifierUrl="http://apptokenverifier:8080/apptokenverifier/" -DidpLoginUrl="http://idplogin:8080/idplogin/" -DgatekeeperServerUrl="http://gatekeeper:8080/gatekeeperserver/" -DtokenLogoutURL="${tokenLogoutURL}" fitnesseMain.FitNesseMain -p 8090 -a /fitnesse/password.txt
  
 #java -jar fitnesse-standalone.jar -p 8090 -o -a password.txt
 
