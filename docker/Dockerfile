@@ -1,4 +1,4 @@
-FROM  openjdk:11-jre-slim
+FROM  adoptopenjdk:12-jdk-hotspot
 
 ENV tokenLogoutURL setWhenDockerStarts
 
