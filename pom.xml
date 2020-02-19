@@ -32,7 +32,7 @@
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<alvincorafitnesse.version>1.1-SNAPSHOT</alvincorafitnesse.version>
+		<alvincorafitnesse.version>1.2-SNAPSHOT</alvincorafitnesse.version>
 	</properties>
 
 	<scm>
