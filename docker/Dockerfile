@@ -1,4 +1,5 @@
-FROM  adoptopenjdk:12-jdk-hotspot
+ARG CORA_DOCKER_JAVA_VERSION
+FROM cora-docker-java:${CORA_DOCKER_JAVA_VERSION}
 
 ENV tokenLogoutURL setWhenDockerStarts
 
