@@ -22,7 +22,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>1.1.1</version>
+		<version>1.2.0</version>
 	</parent>
 
 	<artifactId>alvin-cora-docker-fitnesse</artifactId>
@@ -34,7 +34,7 @@
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 		<exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
 		
-		<cora-docker-java.version>1.0.0</cora-docker-java.version>
+		<cora-docker-java.version>1.1.0</cora-docker-java.version>
 		<alvincorafitnesse.version>1.2-SNAPSHOT</alvincorafitnesse.version>
 	</properties>
 
