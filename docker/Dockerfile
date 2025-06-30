@@ -3,11 +3,13 @@ FROM cora-docker-java:${CORA_DOCKER_JAVA_VERSION}
 
 ENV tokenLogoutURL setWhenDockerStarts
 
+WORKDIR /fitnesse
+
 COPY /alvincorafitnesse.jar /fitnesse/
 COPY /FitNesseRoot /fitnesse/FitNesseRoot
 COPY /plugins.properties /fitnesse/
 COPY /password.txt /fitnesse/
+COPY entrypoint.sh /entrypoint.sh
 
-WORKDIR /fitnesse
-
-CMD java -classpath /fitnesse/alvincorafitnesse.jar  -DsystemUnderTestUrl="http://alvin:8080/alvin/" -DappTokenVerifierUrl="http://login:8080/login/" -DidpLoginUrl="http://idplogin:8080/idplogin/" -DgatekeeperServerUrl="http://gatekeeper:8080/gatekeeperserver/" fitnesseMain.FitNesseMain -p 8090 -a /fitnesse/password.txt
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
