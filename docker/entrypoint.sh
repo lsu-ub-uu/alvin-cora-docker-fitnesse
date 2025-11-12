@@ -13,6 +13,10 @@ java \
   -DappTokenVerifierUrl="$LOGIN_URL" \
   -DidpLoginUrl="$IDP_LOGIN_URL" \
   -DgatekeeperServerUrl="$GATEKEEPER_SERVER_URL" \
+  -DfitnesseAdminLoginId=$FITNESSE_ADMIN_LOGIN_ID \
+  -DfitnesseAdminAppToken=$FITNESSE_ADMIN_APP_TOKEN \
+  -DfitnesseUserLoginId=$FITNESSE_USER_LOGIN_ID \
+  -DfitnesseUserAppToken=$FITNESSE_USER_APP_TOKEN \
   fitnesseMain.FitNesseMain \
   -p 8090 \
   -a /fitnesse/password.txt
