@@ -17,6 +17,7 @@ java \
   -DfitnesseAdminAppToken=$FITNESSE_ADMIN_APP_TOKEN \
   -DfitnesseUserLoginId=$FITNESSE_USER_LOGIN_ID \
   -DfitnesseUserAppToken=$FITNESSE_USER_APP_TOKEN \
+  -DurnNbnUrl=$FITNESSE_URNNBN_URL \
   fitnesseMain.FitNesseMain \
   -p 8090 \
   -a /fitnesse/password.txt
